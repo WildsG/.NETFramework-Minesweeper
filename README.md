@@ -1,4 +1,4 @@
-# .# [.NET Framework] Minesweeper
+# [.NET Framework] Minesweeper
 ## Game originally created on 2020-05.
 #### Last opened with Microsoft Visual Studio 2017. .NET Framework version: 4.6.1 ####
 <p>Copy of original Minesweeper with 3 different difficulty levels. Game created for education purposes.</p>
