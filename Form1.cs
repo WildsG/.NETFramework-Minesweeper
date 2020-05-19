@@ -32,7 +32,6 @@ namespace Minesweeper
         int bombCount = 10;
         Difficulty difficulty;
         bool flag = false;
-        int flagsPlaced;
         IDictionary<int, Color> colors = new Dictionary<int, Color>()
         {
              {1, Color.Blue},
@@ -240,30 +239,43 @@ namespace Minesweeper
                 for (int y = 0; y < matrixSize; y++)
                 {
                     if(buttons[x, y].Equals(btn))
-                    {
-                        if (flag && String.IsNullOrEmpty(buttons[x,y].Text))
-                        {   
-                            if(buttons[x, y].Image != null)
-                            {
-                                buttons[x, y].Image = null;
-                                flagsPlaced--;
-                            }
-                            else
+                    {   
+                        if (buttons[x, y].Image == null && !flag)
+                        {
+                            if (RevealSingle(x, y))
+                                if (values[x, y] == 0)
+                                    RevealRecursive(x, y);
+                        }
+                        else if (flag && String.IsNullOrEmpty(buttons[x,y].Text))
+                        { 
+                            if(GetFlagCount() < bombCount && buttons[x, y].Image == null)
                             {
                                 buttons[x, y].Image = Properties.Resources.flag;
-                                flagsPlaced++;
-                                checkWinCondition();
+                                CheckWinCondition();
                             }
+                            else
+                                buttons[x, y].Image = null;
                         }
-                        else if (buttons[x, y].Image == null && RevealSingle(x, y))
-                            if (values[x, y] == 0)
-                                RevealRecursive(x, y);
                     }
                 }
             }
         }
 
-        private void checkWinCondition()
+        private int GetFlagCount()
+        {
+            int flagCount = 0;
+            for (int x = 0; x < matrixSize; x++)
+            {
+                for (int y = 0; y < matrixSize; y++)
+                {
+                    if (buttons[x, y].Image != null)
+                        flagCount++;
+                }
+            }
+            return flagCount;
+        }
+
+        private void CheckWinCondition()
         {
             int flagsCorrect = 0;
             foreach(Point point in bombPositions)

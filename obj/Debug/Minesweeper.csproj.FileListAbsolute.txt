@@ -9,3 +9,14 @@ C:\Users\Wilds\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.csproj
 C:\Users\Wilds\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.exe
 C:\Users\Wilds\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.pdb
 C:\Users\Wilds\source\repos\Minesweeper\Minesweeper\obj\Debug\Minesweeper.Menu.resources
+C:\Users\Wilds\Desktop\C# Minesweeper\bin\Debug\Minesweeper.exe.config
+C:\Users\Wilds\Desktop\C# Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\Wilds\Desktop\C# Minesweeper\bin\Debug\Minesweeper.pdb
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.csprojAssemblyReference.cache
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.Form1.resources
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.Menu.resources
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.Properties.Resources.resources
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.csproj.GenerateResource.cache
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.csproj.CoreCompileInputs.cache
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.exe
+C:\Users\Wilds\Desktop\C# Minesweeper\obj\Debug\Minesweeper.pdb
